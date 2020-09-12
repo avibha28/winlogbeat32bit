@@ -1,0 +1,604 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview dashboard por powershell module.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"language\": \"kuery\", \"query\": \"\"}}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"version\": \"7.6.0\", \"gridData\": {\"h\": 8, \"y\": 0, \"w\": 13, \"x\": 0, \"i\": \"fa41e799-b6b3-49ec-a11c-3f20231a4a79\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"panelIndex\": \"fa41e799-b6b3-49ec-a11c-3f20231a4a79\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 7, \"x\": 13, \"i\": \"65ce6b63-6ce0-4094-ab23-189126fc169f\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"panelIndex\": \"65ce6b63-6ce0-4094-ab23-189126fc169f\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 8, \"x\": 20, \"i\": \"314e6f55-a05a-4ae3-ab76-bcae7f2074ab\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"panelIndex\": \"314e6f55-a05a-4ae3-ab76-bcae7f2074ab\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 7, \"x\": 28, \"i\": \"a1f161f6-1abe-4177-9ede-4d1984f5a963\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"panelIndex\": \"a1f161f6-1abe-4177-9ede-4d1984f5a963\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 4, \"x\": 35, \"i\": \"6b7ed122-22f3-4e9d-89eb-8de92c0d2033\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"panelIndex\": \"6b7ed122-22f3-4e9d-89eb-8de92c0d2033\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 4, \"x\": 39, \"i\": \"d536f6a7-ad28-4a32-9319-9e0b983828bf\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"panelIndex\": \"d536f6a7-ad28-4a32-9319-9e0b983828bf\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 6, \"y\": 0, \"w\": 4, \"x\": 43, \"i\": \"eda6d08f-b45e-448a-bf9f-afa5516d4b4b\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"panelIndex\": \"eda6d08f-b45e-448a-bf9f-afa5516d4b4b\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 10, \"y\": 6, \"w\": 10, \"x\": 13, \"i\": \"56d2dd76-6fec-422b-96e9-22791b0c5f0c\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_7\", \"panelIndex\": \"56d2dd76-6fec-422b-96e9-22791b0c5f0c\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 6, \"w\": 12, \"x\": 23, \"i\": \"3e4a9683-fd6a-4ad7-b05f-c71bcb4d92d5\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_8\", \"panelIndex\": \"3e4a9683-fd6a-4ad7-b05f-c71bcb4d92d5\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 6, \"w\": 12, \"x\": 35, \"i\": \"a8c00572-667b-4e39-8b0c-10be56fbadd5\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_9\", \"panelIndex\": \"a8c00572-667b-4e39-8b0c-10be56fbadd5\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 8, \"y\": 8, \"w\": 13, \"x\": 0, \"i\": \"e8a57cba-14d2-4cd9-a727-f5e30165f6ba\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_10\", \"panelIndex\": \"e8a57cba-14d2-4cd9-a727-f5e30165f6ba\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 13, \"w\": 12, \"x\": 23, \"i\": \"8ae39cfa-cb06-45eb-880e-b749c3355d61\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_11\", \"panelIndex\": \"8ae39cfa-cb06-45eb-880e-b749c3355d61\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 13, \"w\": 12, \"x\": 35, \"i\": \"ef92d192-b56d-476c-b640-e226679ed178\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_12\", \"panelIndex\": \"ef92d192-b56d-476c-b640-e226679ed178\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 11, \"y\": 16, \"w\": 13, \"x\": 0, \"i\": \"b15dcac5-3616-4b41-8abb-cb28398b16f4\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_13\", \"panelIndex\": \"b15dcac5-3616-4b41-8abb-cb28398b16f4\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 11, \"y\": 16, \"w\": 10, \"x\": 13, \"i\": \"23af61c8-6a45-4d7d-9905-8ed265328130\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_14\", \"panelIndex\": \"23af61c8-6a45-4d7d-9905-8ed265328130\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 20, \"w\": 12, \"x\": 23, \"i\": \"390068ed-b7fb-4ec1-87d5-e89f7cc82e04\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_15\", \"panelIndex\": \"390068ed-b7fb-4ec1-87d5-e89f7cc82e04\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 7, \"y\": 20, \"w\": 12, \"x\": 35, \"i\": \"45724dca-fea2-4f3b-af79-cf89bb12a31b\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_16\", \"panelIndex\": \"45724dca-fea2-4f3b-af79-cf89bb12a31b\"}, {\"version\": \"7.6.0\", \"gridData\": {\"h\": 14, \"y\": 27, \"w\": 47, \"x\": 0, \"i\": \"7f0c4a51-d972-42a5-ba0a-d3de814c7440\"}, \"embeddableConfig\": {}, \"panelRefName\": \"panel_17\", \"panelIndex\": \"7f0c4a51-d972-42a5-ba0a-d3de814c7440\"}]",
+                "timeRestore": false,
+                "title": "[Winlogbeat powershell] Overview",
+                "version": 1
+            },
+            "id": "c77e06c0-9e7c-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "9ec52c30-9e91-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "52543ef0-9e95-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7f3e7710-9e94-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "78874900-9f30-11ea-bef1-95118e62a7c1",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e64ff750-9f28-11ea-bef1-95118e62a7c1",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "2dbabdf0-9f29-11ea-bef1-95118e62a7c1",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "92a2a6b0-9f29-11ea-bef1-95118e62a7c1",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e20b3940-9e9a-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "1eeaaf70-9f23-11ea-bef1-95118e62a7c1",
+                    "name": "panel_8",
+                    "type": "visualization"
+                },
+                {
+                    "id": "f9fa55f0-9f34-11ea-bef1-95118e62a7c1",
+                    "name": "panel_9",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3e55daa0-9e8e-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_10",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d27dea70-9f32-11ea-bef1-95118e62a7c1",
+                    "name": "panel_11",
+                    "type": "visualization"
+                },
+                {
+                    "id": "fbb025e0-9e7c-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_12",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7adbce50-9e96-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_13",
+                    "type": "visualization"
+                },
+                {
+                    "id": "70751050-9f33-11ea-bef1-95118e62a7c1",
+                    "name": "panel_14",
+                    "type": "visualization"
+                },
+                {
+                    "id": "b0c5d570-9e7c-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_15",
+                    "type": "visualization"
+                },
+                {
+                    "id": "c0945210-9e8b-11ea-af6f-cfdb1ee1d6c8",
+                    "name": "panel_16",
+                    "type": "visualization"
+                },
+                {
+                    "id": "11a61760-9f27-11ea-bef1-95118e62a7c1",
+                    "name": "panel_17",
+                    "type": "search"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzczLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Connected users [Winlogbeat powershell]",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"type\": \"table\", \"params\": {\"perPage\": 10, \"totalFunc\": \"sum\", \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"showPartialRows\": false, \"dimensions\": {\"metrics\": [{\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}, {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"cardinality\", \"label\": \"Unique count of host.name\", \"accessor\": 2}], \"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"User\", \"accessor\": 0}]}, \"showTotal\": false, \"percentageCol\": \"\"}, \"title\": \"Connected users [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"customLabel\": \"User\", \"size\": 5, \"field\": \"powershell.connected_user.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"4\"}, \"schema\": \"bucket\", \"id\": \"2\"}, {\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"host.name\", \"customLabel\": \"Host count\"}, \"schema\": \"metric\", \"id\": \"4\"}]}"
+            },
+            "id": "9ec52c30-9e91-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Total engine started [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 1}], \"bucket\": {\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"string\"}, \"accessor\": 0}}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Total engine started [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"filters\", \"params\": {\"filters\": [{\"input\": {\"language\": \"kuery\", \"query\": \"event.code: 400\"}, \"label\": \"\"}]}, \"schema\": \"group\", \"id\": \"2\"}]}"
+            },
+            "id": "52543ef0-9e95-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc1LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Total commands [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 1}], \"bucket\": {\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"string\"}, \"accessor\": 0}}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Total commands [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"filters\", \"params\": {\"filters\": [{\"input\": {\"language\": \"kuery\", \"query\": \"powershell.command.name: * \"}, \"label\": \"Commands\"}]}, \"schema\": \"group\", \"id\": \"2\"}]}"
+            },
+            "id": "7f3e7710-9e94-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc2LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Total remote commands [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 1}], \"bucket\": {\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"string\"}, \"accessor\": 0}}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Total remote commands [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"filters\", \"params\": {\"filters\": [{\"input\": {\"language\": \"kuery\", \"query\": \"process.title:\\\"ServerRemoteHost\\\" \"}, \"label\": \"Remote commands\"}]}, \"schema\": \"group\", \"id\": \"2\"}]}"
+            },
+            "id": "78874900-9f30-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc3LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Unique users [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 0}]}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Unique users [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"related.user\", \"customLabel\": \"Unique users\"}, \"schema\": \"metric\", \"id\": \"1\"}]}"
+            },
+            "id": "e64ff750-9f28-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc4LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Unique engine versions [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 0}]}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Unique engine versions [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"powershell.engine.version\", \"customLabel\": \"Unique versions\"}, \"schema\": \"metric\", \"id\": \"1\"}]}"
+            },
+            "id": "2dbabdf0-9f29-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzc5LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Unique hosts [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"params\": {\"type\": \"metric\", \"dimensions\": {\"metrics\": [{\"type\": \"vis_dimension\", \"format\": {\"params\": {}, \"id\": \"number\"}, \"accessor\": 0}]}, \"metric\": {\"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": 32, \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorsRange\": [{\"from\": 0, \"type\": \"range\", \"to\": 10000}], \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addLegend\": false, \"addTooltip\": true}, \"title\": \"Unique hosts [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"host.name\", \"customLabel\": \"Unique hosts\"}, \"schema\": \"metric\", \"id\": \"1\"}]}"
+            },
+            "id": "92a2a6b0-9f29-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzgwLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Engine versions ran by host [Winlogbeat powershell]",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"type\": \"table\", \"params\": {\"perPage\": 10, \"totalFunc\": \"sum\", \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"showPartialRows\": false, \"dimensions\": {\"metrics\": [{\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}, {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"cardinality\", \"label\": \"Version count\", \"accessor\": 2}], \"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"Host\", \"accessor\": 0}]}, \"showTotal\": false, \"percentageCol\": \"\"}, \"title\": \"Engine versions ran by host [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"customLabel\": \"Host\", \"size\": 5, \"field\": \"host.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"3\"}, \"schema\": \"bucket\", \"id\": \"2\"}, {\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"powershell.engine.version\", \"customLabel\": \"Version count\"}, \"schema\": \"metric\", \"id\": \"3\"}]}"
+            },
+            "id": "e20b3940-9e9a-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzgxLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Engine versions [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 0}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": false}, \"addTooltip\": true}, \"title\": \"Engine versions [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"customLabel\": \"Engine version\", \"size\": 5, \"field\": \"powershell.engine.version\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "1eeaaf70-9f23-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzgyLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Host processes [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"process.title: Descending\", \"accessor\": 0}], \"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": false}, \"addTooltip\": true}, \"title\": \"Host processes [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"size\": 5, \"field\": \"process.title\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "f9fa55f0-9f34-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzgzLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Users [Winlogbeat powershell]",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"type\": \"table\", \"params\": {\"perPage\": 10, \"totalFunc\": \"sum\", \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"showPartialRows\": false, \"dimensions\": {\"metrics\": [{\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}, {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"cardinality\", \"label\": \"Unique count of host.name\", \"accessor\": 2}], \"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"User\", \"accessor\": 0}]}, \"showTotal\": false, \"percentageCol\": \"\"}, \"title\": \"Users [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"customLabel\": \"User\", \"size\": 5, \"field\": \"user.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"bucket\", \"id\": \"3\"}, {\"enabled\": true, \"type\": \"cardinality\", \"params\": {\"field\": \"host.name\", \"customLabel\": \"Host count\"}, \"schema\": \"metric\", \"id\": \"4\"}]}"
+            },
+            "id": "3e55daa0-9e8e-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Event type [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"event.code: Descending\", \"accessor\": 0}], \"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": false}, \"addTooltip\": true}, \"title\": \"Event type [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"customLabel\": \"Event type\", \"size\": 10, \"field\": \"event.code\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "d27dea70-9f32-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg1LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Event Levels [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"log.level: Descending\", \"accessor\": 0}], \"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": false}, \"addTooltip\": true}, \"title\": \"Event Levels [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"size\": 5, \"field\": \"log.level\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "fbb025e0-9e7c-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg2LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Engine and Command started[Winlogbeat powershell]",
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Engine stopped\": \"#BF1B00\", \"*\": \"#EAB839\"}}}",
+                "version": 1,
+                "visState": "{\"type\": \"line\", \"params\": {\"addLegend\": true, \"type\": \"line\", \"addTimeMarker\": false, \"categoryAxes\": [{\"scale\": {\"type\": \"linear\"}, \"show\": true, \"title\": {}, \"style\": {}, \"id\": \"CategoryAxis-1\", \"position\": \"bottom\", \"type\": \"category\", \"labels\": {\"show\": true, \"truncate\": 100, \"filter\": true}}], \"valueAxes\": [{\"scale\": {\"type\": \"log\", \"defaultYExtents\": false, \"mode\": \"normal\", \"setYExtents\": false}, \"show\": true, \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"style\": {}, \"id\": \"ValueAxis-1\", \"position\": \"left\", \"type\": \"value\", \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": true}}], \"dimensions\": {\"y\": [{\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 2}], \"series\": [{\"format\": {}, \"params\": {}, \"aggType\": \"filters\", \"label\": \"filters\", \"accessor\": 1}], \"x\": {\"format\": {\"params\": {\"pattern\": \"HH:mm\"}, \"id\": \"date\"}, \"params\": {\"interval\": \"PT30M\", \"bounds\": {\"max\": \"2020-05-26T09:14:29.996Z\", \"min\": \"2020-05-25T09:14:29.996Z\"}, \"intervalESValue\": 30, \"format\": \"HH:mm\", \"date\": true, \"intervalESUnit\": \"m\"}, \"aggType\": \"date_histogram\", \"label\": \"@timestamp per 30 minutes\", \"accessor\": 0}}, \"addTooltip\": true, \"thresholdLine\": {\"color\": \"#E7664C\", \"show\": false, \"width\": 1, \"value\": 10, \"style\": \"full\"}, \"times\": [], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"show\": true, \"mode\": \"normal\", \"lineWidth\": 2, \"valueAxis\": \"ValueAxis-1\", \"showCircles\": true, \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"interpolate\": \"linear\", \"type\": \"line\"}], \"legendPosition\": \"right\", \"labels\": {}, \"grid\": {\"categoryLines\": false}}, \"title\": \"Engine and Command started[Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"date_histogram\", \"params\": {\"interval\": \"auto\", \"useNormalizedEsInterval\": true, \"drop_partials\": false, \"timeRange\": {\"from\": \"now-1d\", \"to\": \"now\"}, \"extended_bounds\": {}, \"field\": \"@timestamp\", \"min_doc_count\": 1, \"scaleMetricValues\": false}, \"schema\": \"segment\", \"id\": \"2\"}, {\"enabled\": true, \"type\": \"filters\", \"params\": {\"filters\": [{\"input\": {\"language\": \"kuery\", \"query\": \"event.code: \\\"400\\\" \"}, \"label\": \"Engine started\"}, {\"input\": {\"language\": \"kuery\", \"query\": \"event.code: \\\"4105\\\"  \"}, \"label\": \"Command started\"}]}, \"schema\": \"group\", \"id\": \"4\"}]}"
+            },
+            "id": "7adbce50-9e96-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg3LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Top active hosts [Winlogbeat powershell]",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"type\": \"table\", \"params\": {\"perPage\": 10, \"totalFunc\": \"sum\", \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"showPartialRows\": false, \"dimensions\": {\"metrics\": [{\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 0}], \"buckets\": []}, \"showTotal\": false, \"percentageCol\": \"\"}, \"title\": \"Top active hosts [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"size\": 10, \"field\": \"host.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"bucket\", \"id\": \"2\"}]}"
+            },
+            "id": "70751050-9f33-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg4LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [{\"meta\": {\"type\": \"phrase\", \"negate\": false, \"disabled\": false, \"key\": \"powershell.command.invocation_details.type\", \"params\": {\"query\": \"CommandInvocation\"}, \"alias\": null, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\"}, \"$state\": {\"store\": \"appState\"}, \"query\": {\"match_phrase\": {\"powershell.command.invocation_details.type\": \"CommandInvocation\"}}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Top Invoked Commands [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"powershell.command.invocation_details.related_command: Descending\", \"accessor\": 0}], \"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": true}, \"addTooltip\": true}, \"title\": \"Top Invoked Commands [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"size\": 10, \"field\": \"powershell.command.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "b0c5d570-9e7c-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "Wzg5LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" \"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Started providers [Winlogbeat powershell]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"addLegend\": true, \"isDonut\": false, \"dimensions\": {\"buckets\": [{\"format\": {\"params\": {\"parsedUrl\": {\"basePath\": \"\", \"origin\": \"http://192.168.1.48:5601\", \"pathname\": \"/app/kibana\"}, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"aggType\": \"terms\", \"label\": \"powershell.provider.name: Descending\", \"accessor\": 0}], \"metric\": {\"format\": {\"id\": \"number\"}, \"params\": {}, \"aggType\": \"count\", \"label\": \"Count\", \"accessor\": 1}}, \"labels\": {\"show\": false, \"truncate\": 100, \"last_level\": false, \"values\": false}, \"addTooltip\": true}, \"title\": \"Started providers [Winlogbeat powershell]\", \"aggs\": [{\"enabled\": true, \"type\": \"count\", \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"enabled\": true, \"type\": \"terms\", \"params\": {\"otherBucket\": false, \"missingBucketLabel\": \"Missing\", \"missingBucket\": false, \"order\": \"desc\", \"size\": 10, \"field\": \"powershell.provider.name\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\"}, \"schema\": \"segment\", \"id\": \"2\"}]}"
+            },
+            "id": "c0945210-9e8b-11ea-af6f-cfdb1ee1d6c8",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzkwLDFd"
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "event.code",
+                    "powershell.engine.version",
+                    "powershell.runspace_id",
+                    "process.args",
+                    "powershell.command.invocation_details",
+                    "powershell.file.script_block_text"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"(winlog.provider_name : \\\"PowerShell\\\" or winlog.provider_name : \\\"Microsoft-Windows-PowerShell\\\" )\"}, \"highlightAll\": true, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"version\": true}"
+                },
+                "sort": [
+                    [
+                        "@timestamp",
+                        "desc"
+                    ]
+                ],
+                "title": "Details [Winlogbeat powershell]",
+                "version": 1
+            },
+            "id": "11a61760-9f27-11ea-bef1-95118e62a7c1",
+            "migrationVersion": {
+                "search": "7.4.0"
+            },
+            "references": [
+                {
+                    "id": "winlogbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "search",
+            "updated_at": "2020-05-26T12:55:23.284Z",
+            "version": "WzkxLDFd"
+        }
+    ],
+    "version": "7.6.0"
+}
