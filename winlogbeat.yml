@@ -19,9 +19,6 @@
 # https://go.es.io/WinlogbeatConfig
 
 winlogbeat.event_logs:
-  - name: Application
-    ignore_older: 72h
-
   - name: System
 
   - name: Security
@@ -30,53 +27,8 @@ winlogbeat.event_logs:
           lang: javascript
           id: security
           file: ${path.home}/module/security/config/winlogbeat-security.js
-
-  - name: Microsoft-Windows-Sysmon/Operational
-    processors:
-      - script:
-          lang: javascript
-          id: sysmon
-          file: ${path.home}/module/sysmon/config/winlogbeat-sysmon.js
-
-  - name: Windows PowerShell
-    event_id: 400, 403, 600, 800
-    processors:
-      - script:
-          lang: javascript
-          id: powershell
-          file: ${path.home}/module/powershell/config/winlogbeat-powershell.js
-
-  - name: Microsoft-Windows-PowerShell/Operational
-    event_id: 4103, 4104, 4105, 4106
-    processors:
-      - script:
-          lang: javascript
-          id: powershell
-          file: ${path.home}/module/powershell/config/winlogbeat-powershell.js
-
-  - name: ForwardedEvents
-    tags: [forwarded]
-    processors:
-      - script:
-          when.equals.winlog.channel: Security
-          lang: javascript
-          id: security
-          file: ${path.home}/module/security/config/winlogbeat-security.js
-      - script:
-          when.equals.winlog.channel: Microsoft-Windows-Sysmon/Operational
-          lang: javascript
-          id: sysmon
-          file: ${path.home}/module/sysmon/config/winlogbeat-sysmon.js
-      - script:
-          when.equals.winlog.channel: Windows PowerShell
-          lang: javascript
-          id: powershell
-          file: ${path.home}/module/powershell/config/winlogbeat-powershell.js
-      - script:
-          when.equals.winlog.channel: Microsoft-Windows-PowerShell/Operational
-          lang: javascript
-          id: powershell
-          file: ${path.home}/module/powershell/config/winlogbeat-powershell.js
+  
+  - name: HardwareEvents
 
 # ====================== Elasticsearch template settings =======================
 
@@ -105,7 +57,7 @@ setup.template.settings:
 # These settings control loading the sample dashboards to the Kibana index. Loading
 # the dashboards is disabled by default and can be enabled either by setting the
 # options here or by using the `setup` command.
-#setup.dashboards.enabled: false
+#setup.dashboards.enabled: true
 
 # The URL from where to download the dashboards archive. By default this URL
 # has a value which is computed based on the Beat name and version. For released
@@ -123,7 +75,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  #host: "localhost:5601"
+  host: "http://logsearchwin.brandmuscle.local:80"
 
   # Kibana Space ID
   # ID of the Kibana Space into which the dashboards should be loaded. By default,
@@ -150,7 +102,7 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["localhost:9200"]
+  hosts: ["10.100.2.11:9200"]
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
@@ -213,28 +165,6 @@ processors:
 # that it is pointing to your Elasticsearch monitoring cluster, you can simply
 # uncomment the following line.
 #monitoring.elasticsearch:
-
-# ============================== Instrumentation ===============================
-
-# Instrumentation support for the winlogbeat.
-#instrumentation:
-    # Set to true to enable instrumentation of winlogbeat.
-    #enabled: false
-
-    # Environment in which winlogbeat is running on (eg: staging, production, etc.)
-    #environment: ""
-
-    # APM Server hosts to report instrumentation results to.
-    #hosts:
-    #  - http://localhost:8200
-
-    # API Key for the APM Server(s).
-    # If api_key is set then secret_token will be ignored.
-    #api_key:
-
-    # Secret token for the APM Server(s).
-    #secret_token:
-
 
 # ================================= Migration ==================================
 
